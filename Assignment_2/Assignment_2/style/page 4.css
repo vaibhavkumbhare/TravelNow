@@ -1,0 +1,91 @@
+/* Main container styles */
+.lakshadweep-container {
+    background-color: rgba(1, 50, 126, 1);
+    overflow: hidden;
+    font-family:
+      Alkatra,
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 48px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  /* Logo image at the top */
+  .logo-image {
+    aspect-ratio: 0.98;
+    object-fit: contain;
+    object-position: center;
+    width: 101px;
+    max-width: 100%;
+  }
+  
+  /* Main content section */
+  .content-section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 875px;
+    margin-top: 46px;
+    width: 100%;
+    padding-left: 23px;
+    padding-bottom: 193px;
+    align-items: stretch;
+  }
+  
+  /* Background image that covers the entire section */
+  .background-image {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  /* Islands image positioned at the bottom right */
+  .islands-image {
+    aspect-ratio: 1.5;
+    object-fit: contain;
+    object-position: center;
+    width: 799px;
+    align-self: end;
+    z-index: 10;
+    margin-top: -149px;
+    max-width: 100%;
+  }
+  
+  /* Description text with semi-transparent background */
+  .description-text {
+    position: relative;
+    background-color: rgba(217, 217, 217, 0.3);
+    margin-top: 47px;
+    margin-bottom: -39px;
+    padding: 40px 2px 4px;
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media (max-width: 991px) {
+    .lakshadweep-container {
+      font-size: 40px;
+    }
+  
+    .content-section {
+      max-width: 100%;
+      padding-left: 20px;
+      padding-bottom: 100px;
+      margin-top: 40px;
+      font-size: 40px;
+    }
+  
+    .description-text {
+      max-width: 100%;
+      font-size: 40px;
+      margin-bottom: 10px;
+      margin-top: 40px;
+    }
+  }
+  

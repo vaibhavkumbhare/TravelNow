@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .travel-showcase {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .travel-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 103px;
+    height: 103px;
+    z-index: 2;
+  }
+  
+  @media (max-width: 640px) {
+    .travel-logo {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .night-image-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .night-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .day-image-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 53%;
+    height: 48.4%;
+  }
+  
+  @media (max-width: 991px) {
+    .day-image-wrapper {
+      width: 70%;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .day-image-wrapper {
+      width: 100%;
+      height: 40%;
+    }
+  }
+  
+  .day-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .description-container {
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+    width: 100%;
+    padding: 0 20px;
+  }
+  
+  .description-background {
+    position: absolute;
+    width: 98.5%;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(217, 217, 217, 0.3);
+  }
+  
+  @media (max-width: 640px) {
+    .description-background {
+      width: 95%;
+    }
+  }
+  
+  .description-text {
+    position: relative;
+    color: #81210e;
+    text-align: center;
+    font-family: "Alkatra", cursive;
+    font-size: 48px;
+    font-weight: 700;
+    padding: 20px;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 991px) {
+    .description-text {
+      font-size: 36px;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .description-text {
+      font-size: 24px;
+      padding: 15px;
+    }
+  }
+  

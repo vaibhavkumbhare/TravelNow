@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Image Component</title>
+    <style>
+      .responsive-image {
+        aspect-ratio: 1.39;
+        object-fit: contain;
+        object-position: center;
+        width: 100%;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      }
+
+      .image-container {
+        max-width: 100%;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <figure class="image-container">
+      <img
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/ab212004f7e4f71f59d93f6747be4442d1d69060?placeholderIfAbsent=true&apiKey=d2847f596dd0488ca3d3ed1f35f66bfa"
+        alt="Featured image"
+        class="responsive-image"
+      />
+    </figure>
+  </body>
+</html>

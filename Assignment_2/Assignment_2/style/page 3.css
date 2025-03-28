@@ -1,0 +1,216 @@
+/* Base styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  .travel-container {
+    background-color: rgba(255, 255, 255, 1);
+    overflow: hidden;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 1024px;
+    width: 100%;
+    padding-right: 80px;
+    padding-bottom: 117px;
+  }
+  
+  .background-image {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .logo {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 103px;
+    max-width: 100%;
+    z-index: 1;
+  }
+  
+  .main-content {
+    position: relative;
+    align-self: center;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: -23px;
+    width: 911px;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  /* Destinations section */
+  .destinations-section {
+    align-self: stretch;
+    width: 100%;
+  }
+  
+  .destinations-grid {
+    gap: 20px;
+    display: flex;
+  }
+  
+  .destination-card {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    line-height: normal;
+    width: 33%;
+    margin-left: 0px;
+  }
+  
+  .destination-card:not(:first-child) {
+    margin-left: 20px;
+  }
+  
+  .card-content {
+    border-radius: 40px;
+    background-color: rgba(221, 241, 255, 1);
+    display: flex;
+    flex-grow: 1;
+    padding-bottom: 18px;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+  
+  .destination-image {
+    aspect-ratio: 0.89;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    border-radius: 35px;
+  }
+  
+  .destination-name {
+    align-self: center;
+    margin-top: 9px;
+    font-family:
+      "Jeju Hallasan",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  
+  /* Travel tips section */
+  .travel-tip {
+    display: flex;
+    margin-top: 57px;
+    margin-left: 17px;
+    width: 632px;
+    max-width: 100%;
+    align-items: stretch;
+    gap: 35px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  
+  .travel-tip:first-of-type {
+    margin-top: 133px;
+    margin-left: 20px;
+    width: 625px;
+    gap: 40px 44px;
+  }
+  
+  .travel-tip:nth-of-type(2) {
+    gap: 37px;
+  }
+  
+  .tip-number {
+    font-size: 48px;
+    font-family:
+      "Alex Brush",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    align-self: start;
+    flex-grow: 1;
+  }
+  
+  .tip-content {
+    background-color: rgba(20, 85, 109, 1);
+    padding: 26px 70px;
+    font-family:
+      "Alkatra",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 24px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0;
+    width: fit-content;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 991px) {
+    .content-wrapper {
+      max-width: 100%;
+      padding-right: 20px;
+      padding-bottom: 100px;
+    }
+  
+    .main-content {
+      margin-bottom: 10px;
+    }
+  
+    .destinations-section {
+      max-width: 100%;
+    }
+  
+    .destinations-grid {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+  
+    .destination-card {
+      width: 100%;
+      margin-left: 0 !important;
+    }
+  
+    .card-content {
+      margin-top: 40px;
+    }
+  
+    .destination-name {
+      white-space: initial;
+    }
+  
+    .travel-tip {
+      margin-top: 40px;
+    }
+  
+    .tip-number {
+      font-size: 40px;
+    }
+  
+    .tip-content {
+      max-width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  

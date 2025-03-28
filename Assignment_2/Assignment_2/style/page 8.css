@@ -1,0 +1,174 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Alkatra", cursive;
+  }
+  
+  /* Page container */
+  .page-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+  }
+  
+  /* Background image */
+  .background-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    object-fit: cover;
+  }
+  
+  /* Content wrapper */
+  .content-wrapper {
+    position: relative;
+    z-index: 10;
+  }
+  
+  /* Decorative logo */
+  .decorative-logo {
+    width: 103px;
+    height: 103px;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  /* Title section */
+  .title-section {
+    display: flex;
+    align-items: center;
+    margin-top: 99px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1265px;
+  }
+  
+  /* Diamond shape */
+  .diamond-shape {
+    width: 75px;
+    height: 74px;
+    background-color: #14556d;
+    transform: rotate(50.067deg);
+    margin-right: 32px;
+  }
+  
+  /* Title container */
+  .title-container {
+    display: flex;
+    align-items: center;
+    background-color: #14556d;
+    padding: 10px 20px;
+    border-radius: 4px;
+  }
+  
+  /* Step number */
+  .step-number {
+    color: #fff;
+    font-family: Alkatra;
+    font-size: 48px;
+    margin-right: 20px;
+  }
+  
+  /* Step title */
+  .step-title {
+    color: #fff;
+    font-family: Alkatra;
+    font-size: 40px;
+    text-align: center;
+  }
+  
+  /* Info container */
+  .info-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1248px;
+    margin-top: 60px;
+    background-color: rgba(217, 217, 217, 0.6);
+    padding: 30px;
+    border-radius: 8px;
+  }
+  
+  /* Info content */
+  .info-content {
+    color: #000;
+    font-family: Alkatra;
+    font-size: 36px;
+    line-height: 1.4;
+  }
+  
+  /* Info items */
+  .info-item {
+    margin-bottom: 20px;
+  }
+  
+  .info-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Media queries for responsive design */
+  @media (max-width: 991px) {
+    .title-section {
+      flex-direction: column;
+      margin-top: 120px;
+    }
+  
+    .diamond-shape {
+      display: none;
+    }
+  
+    .title-container {
+      width: 90%;
+    }
+  
+    .step-title {
+      font-size: 32px;
+    }
+  
+    .info-container {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  
+    .info-content {
+      font-size: 30px;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .title-section {
+      margin-top: 140px;
+    }
+  
+    .title-container {
+      width: 95%;
+      flex-direction: column;
+    }
+  
+    .step-number {
+      margin-bottom: 10px;
+    }
+  
+    .step-title {
+      font-size: 28px;
+    }
+  
+    .info-container {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  
+    .info-content {
+      font-size: 24px;
+    }
+  }
+  
